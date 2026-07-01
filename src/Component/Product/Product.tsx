@@ -8,7 +8,7 @@ const ProductCard = (props: Product) => {
     <>
       <div className="product">
         <Categoria nombre={props.category} />
-        <img src={props.image} alt={props.title} />
+        <img src={props.images} alt={props.title} />
         <h3>{props.title}</h3>
         <div className="price-container">
           <strong>${props.price}</strong>
