@@ -8,11 +8,10 @@ function ProductList() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://dummyjson.com/products")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        setProducts(data);
+        setProducts(data.products);
         setLoading(false);
       })
       .catch((error) => {
@@ -38,7 +37,7 @@ function ProductList() {
           key={product.id}
           title={product.title}
           price={product.price}
-          image={product.image}
+          image={product.images[0]}
           id={product.id}
           category={product.category}
         />
