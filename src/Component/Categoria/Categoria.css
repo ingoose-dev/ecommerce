@@ -1,0 +1,10 @@
+.categoria {
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.categoria h2 {
+  font-size: 18px;
+  color: #333;
+}
