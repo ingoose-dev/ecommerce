@@ -1,22 +1,17 @@
 import "./Product.css";
 import Categoria from "../Categoria/Categoria";
 import Button from "../Button/Button";
+import type { Product } from "../../types/Product.types";
 
-const Product = (props: {
-  titulo: string;
-  precio: number;
-  imagen: string;
-  id: number;
-  categoria: string;
-}) => {
+const ProductCard = (props: Product) => {
   return (
     <>
       <div className="product">
-        <Categoria nombre={props.categoria} />
-        <img src={props.imagen} alt={props.titulo} />
-        <h3>{props.titulo}</h3>
+        <Categoria nombre={props.category} />
+        <img src={props.image} alt={props.title} />
+        <h3>{props.title}</h3>
         <div className="price-container">
-          <strong>${props.precio}</strong>
+          <strong>${props.price}</strong>
         </div>
 
         <div className="button-container">
@@ -32,4 +27,4 @@ const Product = (props: {
   );
 };
 
-export default Product;
+export default ProductCard;
