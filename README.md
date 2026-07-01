@@ -15,8 +15,9 @@ footer
 product
 
 # Instrucciones para ejecutar el proyecto
-clonar repositorio https://github.com/ingoose-dev/react.git
-realiciar npn run dev
+clonar repositorio https://github.com/ingoose-dev/ecommerce.git 
+npm install
+npm run dev
 
 # Tecnologías usadas
 vite
